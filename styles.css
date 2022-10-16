@@ -1,4 +1,9 @@
 /* ------------------ SETUP ------------------ */
+:root {
+    --main-bottom-margin: 120px;
+    --main-top-offset: -500px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +12,7 @@
 
 html {
     font-size: 22px;
+    height: 100%;
     color: #1e1e1e;
 
     font-family: sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 'Trebuchet MS';
@@ -14,13 +20,18 @@ html {
 
 body {
     width: 100%;
-    min-height: 100vh;
-    background: #e6e6e6;
+    height: 100%;
+    background: #b4b4b4;
 }
 
 /* ------------------ WEBSITE ELEMENTS ------------------ */
 img {
     border-radius: 10px;
+}
+p {
+    font-weight: 500;
+    text-indent: 1rem;
+    line-height: 130%;
 }
 
 header {
@@ -35,31 +46,26 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 header h1 {
     position: absolute;
-    font-size: 3rem;
-    color: #e6e6e6;
-
     top: 60px;
     left: 50%;
     transform: translate(-50%, 0);
-}
 
-.header-fadeout {
+    font-size: 3rem;
+    color: #e6e6e6;
+    text-shadow: 1px 1px #000000, 1px -1px #000000, -1px 1px #000000, -1px -1px #000000;
+}
+#header-fadeout {
     position: absolute;
     width: 100%;
-    height: 80%;
+    height: 50%;
 
     top: 100%;
     left: 0;
     transform: translate(0%, -100%);
 
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(230, 230, 230, 1));
-}
-
-.section-header {
-    margin-bottom: 15px;
+    background: linear-gradient(rgba(180, 180, 180, 0), rgba(180, 180, 180, 1));
 }
 
 .section {
@@ -69,19 +75,18 @@ header h1 {
     align-items: center;
     flex-wrap: wrap;
 }
-
+.section-header {
+    margin-bottom: 15px;
+}
 .section:not(:first-of-type) {
     margin-top: 80px;
 }
-
 .section > h2 {
     flex-basis: 100%;
 }
-
 .section > p {
     width: 65%;
 }
-
 .section > figure {
     max-width: 30%;
 }
@@ -91,31 +96,35 @@ figure img {
     height: 100%;
     object-fit: contain;
 }
-
 figcaption {
     text-align: center;
     font-size: 0.6rem;
     margin-top: 2px;
-    font-style: italic;
 }
-
-p {
-    font-weight: 500;
-    text-indent: 1rem;
-    line-height: 130%;
+figcaption > .italic {
+    display: inline;
+    font-style: italic;
 }
 
 main {
     background: rgba(237, 164, 37, 0.90);
 
-    position: absolute;
+    position: relative;
     width: 80%;
 
-    top: 200px;
+    top: var(--main-top-offset);
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0%);
     z-index: 2;
 
     padding: 60px 40px;
     border-radius: 10px;
 }
+
+#bottom-margin {
+    position: relative;
+    top: var(--main-top-offset);
+    height: var(--main-bottom-margin);
+}
+
+/* ------------------ TODO: MEDIA QUERIES ------------------ */
