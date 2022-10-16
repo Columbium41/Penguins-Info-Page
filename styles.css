@@ -27,6 +27,7 @@ body {
 /* ------------------ WEBSITE ELEMENTS ------------------ */
 img {
     border-radius: 10px;
+    border: 2px solid white;
 }
 p {
     font-weight: 500;
@@ -72,17 +73,15 @@ header h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
-.section-header {
-    margin-bottom: 15px;
-}
 .section:not(:first-of-type) {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .section > h2 {
     flex-basis: 100%;
+    margin-bottom: 30px;
 }
 .section > p {
     width: 65%;
@@ -104,6 +103,20 @@ figcaption {
 figcaption > .italic {
     display: inline;
     font-style: italic;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+}
+.photo-gallery > figure {
+    width: 19%;
+    margin: 5px 0;
 }
 
 main {

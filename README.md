@@ -10,7 +10,6 @@ A one-page informational website about penguins. The website is built with basic
 - CSS Flexbox
 
 ## TODO:
-- Decorate images
 - Finish adding all the sections
 - Make the website responsive
 - Host website using a cloud service (probably github)
