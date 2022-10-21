@@ -3,11 +3,13 @@
     --main-bottom-margin: 120px;
     --main-top-offset: -500px;
 
-    --bg-color-red: 190;
-    --bg-color-green: 190;
-    --bg-color-blue: 190;
+    --bg-color-red: 237;
+    --bg-color-green: 164;
+    --bg-color-blue: 37;
     
-    --img-border-color: rgba(200, 200, 200, 1.0);
+    --img-border-color: rgba(60, 60, 60, 1.0);
+
+    --main-bg-color: rgba(220, 220, 220, 0.90);
 }
 
 * {
@@ -40,6 +42,10 @@ p {
     text-indent: 1rem;
     line-height: 130%;
 }
+a {
+    text-decoration: none;
+    color: rgb(var(--bg-color-red), var(--bg-color-green), var(--bg-color-blue));
+}
 
 header {
     width: 100%;
@@ -66,7 +72,7 @@ header h1 {
 #header-fadeout {
     position: absolute;
     width: 100%;
-    height: 50%;
+    height: 70%;
 
     top: 100%;
     left: 0;
@@ -74,6 +80,21 @@ header h1 {
 
     background: linear-gradient(rgba(var(--bg-color-red), var(--bg-color-green), var(--bg-color-blue), 0), 
         rgba(var(--bg-color-red), var(--bg-color-green), var(--bg-color-blue), 1));
+}
+
+main {
+    background: var(--main-bg-color);
+
+    position: relative;
+    width: 80%;
+
+    top: var(--main-top-offset);
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 2;
+
+    padding: 60px 40px;
+    border-radius: 10px;
 }
 
 .section {
@@ -110,6 +131,7 @@ figcaption {
     margin-top: 0px;
     background: var(--img-border-color);
     border-radius: 0px 0px 10px 10px;
+    color: #e6e6e6;
 }
 figcaption > .italic {
     display: inline;
@@ -128,21 +150,6 @@ figcaption > .italic {
 .photo-gallery > figure {
     width: 19%;
     margin: 5px 0;
-}
-
-main {
-    background: rgba(237, 164, 37, 0.90);
-
-    position: relative;
-    width: 80%;
-
-    top: var(--main-top-offset);
-    left: 50%;
-    transform: translate(-50%, 0%);
-    z-index: 2;
-
-    padding: 60px 40px;
-    border-radius: 10px;
 }
 
 #bottom-margin {
