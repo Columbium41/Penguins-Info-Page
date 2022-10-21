@@ -8,6 +8,7 @@ A one-page informational website about penguins. The website is built with basic
 - CSS Background
 - Basics of CSS Positioning
 - CSS Flexbox
+- CSS Transitions
 
 ## TODO:
 - Finish adding all the sections
