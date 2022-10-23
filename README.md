@@ -11,6 +11,6 @@ A one-page informational website about penguins. The website is built with basic
 - CSS Transitions
 
 ## TODO:
-- Finish adding all the sections
 - Make the website responsive
+- Add photo slideshow to mobile screens
 - Host website using a cloud service (probably github)

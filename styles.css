@@ -100,7 +100,7 @@ main {
     transform: translate(-50%, 0%);
     z-index: 2;
 
-    padding: 60px 40px;
+    padding: 60px;
     border-radius: 10px;
 }
 
@@ -164,6 +164,10 @@ figcaption > a {
     margin: 5px 0;
 }
 
+.photo-slideshow {
+    display: none;
+}
+
 #bottom-margin {
     position: relative;
     top: var(--main-top-offset);
@@ -171,3 +175,61 @@ figcaption > a {
 }
 
 /* ------------------ TODO: MEDIA QUERIES ------------------ */
+
+/* Phone Screens (screen width <= 425px) */
+@media screen and (max-width: 425px) {
+    main {
+        width: 90%;
+        padding: 20px;
+    }
+    .section > p, .section > ul {
+        width: 100%;
+    }
+    .section > figure {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+    .photo-gallery {
+        display: none;
+    }
+    .photo-slideshow {
+        /* TODO: enable photo slideshow display */
+    }
+}
+
+/* Tablet Screens (426px <= screen width <= 820px) */
+@media screen and (min-width: 426px) and (max-width: 820px) {
+    main {
+        padding: 30px;
+    }
+    .section > p, .section > ul {
+        width: 100%;
+    }
+    .section > figure {
+        margin: 20px auto 0 auto;
+        max-width: 80%;
+    }
+    .photo-gallery {
+        display: none;
+    }
+    .photo-slideshow {
+        /* TODO: enable photo slideshow display */
+    }
+}
+
+/* Smaller laptop screens (821px <= screen width <= 1024) */
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+    main {
+        padding: 40px;
+    }
+    .section > p, .section > ul {
+        width: 85%;
+    }
+    .section > figure {
+        margin: 20px auto 0 auto;
+        max-width: 50%;
+    }
+    .photo-gallery > figure {
+        width: 24%;
+    }
+}
