@@ -73,17 +73,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-header h1 {
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    font-size: 3rem;
-    color: var(--white-text-color);
-    /* Add black outline to text */
-    text-shadow: 1px 1px #000000, 1px -1px #000000, -1px 1px #000000, -1px -1px #000000;
-}
 /* Gradually transition the header's background image to the background color of the webpage */
 #header-fadeout {
     position: absolute;
@@ -114,6 +103,11 @@ main {
 
     padding: 60px;
     border-radius: 15px;
+}
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 80px;
 }
 
 /* Add flex layout to website sections */
