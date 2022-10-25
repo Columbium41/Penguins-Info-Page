@@ -1,18 +1,18 @@
-# Penguins (WIP)
+# Penguins Info Page
 ## About
-A one-page informational website about penguins. The website is built with basic HTML & CSS. 
+A static, one-page informational website about penguins. The website is built with basic HTML, CSS and Javascript. 
 
-## What I learned so far
-- Basics of HTML
+## What I learned
+- HTML
 - CSS Box Model
 - CSS Background
-- Basics of CSS Positioning
+- CSS Positioning
 - CSS Flexbox
 - CSS Transitions
-- Media Queries
+- Basics of CSS Animation
+- CSS Media Queries
+- Git branching
+- Deploying a static website on [Github Pages](https://pages.github.com/)
 
-## TODO:
-- Make the website responsive
-- Add photo slideshow to mobile screens (Work on Javascript)
-- Host website using a cloud service (probably github)
-- Add more detailed comments in HTML and CSS Source
+## Website Link
+[https://columbium41.github.io/Penguins-Info-Page/](https://columbium41.github.io/Penguins-Info-Page/)
