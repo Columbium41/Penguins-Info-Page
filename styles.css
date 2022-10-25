@@ -240,6 +240,9 @@ figcaption > a {
         margin-top: 10px;
         max-width: 100%;
     }
+    .photo-slideshow {
+        width: 100%;
+    }
 }
 
 /* Tablet Screens (426px <= screen width <= 820px) */
@@ -254,6 +257,9 @@ figcaption > a {
         margin: 20px auto 0 auto;
         max-width: 80%;
     }
+    .photo-slideshow {
+        width: 80%;
+    }
 }
 
 /* Smaller laptop screens (821px <= screen width <= 1024) */
@@ -266,6 +272,9 @@ figcaption > a {
     }
     .section > figure {
         margin: 20px auto 0 auto;
-        max-width: 50%;
+        max-width: 60%;
+    }
+    .photo-slideshow {
+        width: 60%;
     }
 }
