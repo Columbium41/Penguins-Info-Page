@@ -3,9 +3,9 @@
     --main-bottom-margin: 120px;
     --main-top-offset: -500px;
 
-    --bg-color-red: 237;
-    --bg-color-green: 164;
-    --bg-color-blue: 37;
+    --bg-color-red: 190;
+    --bg-color-green: 131;
+    --bg-color-blue: 30;
     
     --img-border-color: rgba(60, 60, 60, 1.0);
     --img-border-size: 5px;
@@ -53,7 +53,7 @@ ul {
 }
 /* Add orange color to links */
 a {
-    color: rgb(var(--bg-color-red), var(--bg-color-green), var(--bg-color-blue));
+    color: orange;
 }
 /* Make links darker when they are hovered */
 a:hover {
@@ -219,6 +219,20 @@ figcaption > a {
     right: 5px;
 }
 
+/* Animation for photo slideshow */
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* Add bottom-margin to page as main is relatively positioned */
 #bottom-margin {
     position: relative;
@@ -243,6 +257,9 @@ figcaption > a {
     .photo-slideshow {
         width: 100%;
     }
+    .prev, .next {
+        font-size: 1.5rem;
+    }
 }
 
 /* Tablet Screens (426px <= screen width <= 820px) */
@@ -259,6 +276,9 @@ figcaption > a {
     }
     .photo-slideshow {
         width: 80%;
+    }
+    .prev, .next {
+        font-size: 2rem;
     }
 }
 
