@@ -204,6 +204,7 @@ figcaption > a {
     color: var(--white-text-color);
     background: rgba(0, 0, 0, 0.4);
     transition: 0.25s;
+    user-select: none;
 }
 .prev:hover, .next:hover {
     color: var(--white-text-color);
