@@ -9,8 +9,10 @@ A one-page informational website about penguins. The website is built with basic
 - Basics of CSS Positioning
 - CSS Flexbox
 - CSS Transitions
+- Media Queries
 
 ## TODO:
 - Make the website responsive
-- Add photo slideshow to mobile screens
+- Add photo slideshow to mobile screens (Work on Javascript)
 - Host website using a cloud service (probably github)
+- Add more detailed comments in HTML and CSS Source
